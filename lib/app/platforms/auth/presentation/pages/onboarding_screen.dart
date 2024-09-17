@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_clean_architecture/app/platforms/auth/presentation/component/colored_button.dart';
+import 'package:flutter_chat_clean_architecture/app/platforms/auth/presentation/pages/signup_screen.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -14,7 +15,7 @@ class OnBoardingScreen extends StatelessWidget {
         context,
         PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) {
-            return const Placeholder();
+            return const PhoneAuthScreen();
           },
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(0.0, 1.0);

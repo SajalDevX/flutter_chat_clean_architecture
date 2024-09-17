@@ -3,9 +3,10 @@ import 'package:flutter_chat_clean_architecture/app/platforms/auth/data/reposito
 
 import '../../../../shared/core/utils/authResult.dart';
 import '../../data/models/user.dart';
+import '../repository/auth_repository.dart';
 
 class InsertUserUseCase {
-  final AuthRepositoryImpl authPageRepository;
+  final AuthRepository authPageRepository;
 
   InsertUserUseCase(this.authPageRepository);
 

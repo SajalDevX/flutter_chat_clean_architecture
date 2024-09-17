@@ -2,8 +2,10 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_chat_clean_architecture/app/platforms/auth/data/repository_impl/authRepositoryImpl.dart';
 import 'package:flutter_chat_clean_architecture/app/shared/core/utils/authResult.dart';
 
+import '../repository/auth_repository.dart';
+
 class SignInUserUseCase {
-  final AuthRepositoryImpl authRepository;
+  final AuthRepository authRepository;
 
   SignInUserUseCase(this.authRepository);
 

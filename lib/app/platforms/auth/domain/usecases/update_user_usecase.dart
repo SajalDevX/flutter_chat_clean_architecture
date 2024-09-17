@@ -3,9 +3,10 @@ import 'package:dartz/dartz.dart';
 import '../../../../shared/core/utils/authResult.dart';
 import '../../data/models/user.dart';
 import '../../data/repository_impl/authRepositoryImpl.dart';
+import '../repository/auth_repository.dart';
 
 class UpdateUserUseCase {
-  final AuthRepositoryImpl authPageRepository;
+  final AuthRepository authPageRepository;
 
   UpdateUserUseCase(this.authPageRepository);
 
